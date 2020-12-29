@@ -61,14 +61,17 @@ body{
 }
 
 .js-weather{
-	text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-	text-align:center;
-	vertical-align: bottom;
-	 font-family: SDD;
-  src: url(font/SDSamliphopangcheTTFBasic.ttf) format('truetype');
-  font-style: normal;
-  font-weight: normal;
-  unicode-range: U+0-10FFFF;
+    text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+    text-align:right;
+    vertical-align: bottom;
+    font-family: SDD;
+    src: url(font/SDSamliphopangcheTTFBasic.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    unicode-range: U+0-10FFFF;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 input:focus{
