@@ -77,7 +77,7 @@ body{
 .js-weather-image{
     position: absolute;
     right: 10px;
-    top: 30px;
+    top: 50px;
 }
 
 input:focus{
