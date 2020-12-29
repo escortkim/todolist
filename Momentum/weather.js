@@ -1,4 +1,5 @@
 const weather = document.querySelector(".js-weather");
+const weather_image = document.querySelector(".js-weather-image");
 const API_KEY = "a0a2e526870999b20ed3f22164870054";
 const COORDS = "coords";
 
@@ -11,7 +12,18 @@ function getWeather(lat, lon){
     temperature = json.main.temp;
     name = json.name;
     wt = json.weather[0].description;
+    wt_id = parseInt(json.weather[0].id);
+    console.log(wt_id);
     weather.innerText = `${temperature}c@${name}\n${wt}`;
+    if(wt_id>800)console.log("continue");
+    else if(wt_id==800)weather_image.src='images/clear.png';
+    else if(wt_id>700)weather_image.src='images/fog.png';
+    else if(wt_id>=600)weather_image.src='images/snow.png';
+    else if(wt_id>=500)weather_image.src='images/rain.png';
+    else if(wt_id>=300)weather_image.src='images/drizzle.png';
+    else if(wt_id>=200)weather_image.src='images/thunderstorm.png';
+   
+    
 })
 }
 
