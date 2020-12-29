@@ -29,16 +29,81 @@ body{
     z-index: -1;
     animation: fadeIn .5s linear; 
 }
+@font-face {
+  font-family: SDD;
+  src: url(font/SDSamliphopangcheTTFBasic.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+}
 
 .js-clock{
     text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-family: SDD, serif;
 }
 
 .js-greetings{
     text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-family: SDD, serif;
+    
 }
 
 .js-toDoForm{
     text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    
 }
+
+.js-weather{
+	text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+	text-align:center;
+	vertical-align: bottom;
+	 font-family: SDD;
+  src: url(font/SDSamliphopangcheTTFBasic.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+}
+
+input:focus{
+	outline:none;
+}
+
+.input{
+	border-radius: 15px;
+	border-color: none;
+	width: 300px;
+	height: 50px;
+}
+
+.js-toDoList{
+	text-align: center;
+	 font-family: SDD;
+  src: url(font/SDSamliphopangcheTTFBasic.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+ul{
+   list-style:none;
+   }
+
+ul>li>button{
+	background-color: transparent;
+	text-align:top;
+	align-items: center;
+	border: 2px solid #fff;
+	color: #fff;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+}
+ul>li>button:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+
 
