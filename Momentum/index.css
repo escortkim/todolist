@@ -74,6 +74,12 @@ body{
     top: 10px;
 }
 
+.js-weather-image{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+}
+
 input:focus{
 	outline:none;
 }
