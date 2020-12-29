@@ -40,12 +40,14 @@ body{
 .js-clock{
     text-align: center;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 50px;
     font-family: SDD, serif;
 }
 
 .js-greetings{
     text-align: center;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size:25px;
     font-family: SDD, serif;
     
 }
