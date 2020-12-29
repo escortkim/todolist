@@ -15,7 +15,8 @@ function getWeather(lat, lon){
     wt_id = parseInt(json.weather[0].id);
     console.log(wt_id);
     weather.innerText = `${temperature}c@${name}\n${wt}`;
-    if(wt_id>800)console.log("continue");
+    if(wt_id>804)console.log("continue");
+    else if(wt_id>800)weather_image.src='images/overcast.jpg';
     else if(wt_id==800)weather_image.src='images/clear.png';
     else if(wt_id>700)weather_image.src='images/fog.png';
     else if(wt_id>=600)weather_image.src='images/snow.png';
