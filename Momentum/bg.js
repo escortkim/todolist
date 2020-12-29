@@ -3,9 +3,9 @@ const body = document.querySelector("body");
 const IMG_NUMBER = 5;
 
 
-function paintImage(imgNumber){
+function paintImage(){
     const image = new Image();
-    image.src = `images/${imgNumber+1}.jpg`;
+    image.src = 'https://source.unsplash.com/random/1920x1080';
     image.classList.add("bgImage");
     body.prepend(image);
 }
@@ -16,8 +16,8 @@ function genRandom(){
 }
 
 function init(){
-    const randomNumber = genRandom();
-    paintImage(randomNumber);
+    //const randomNumber = genRandom();
+    paintImage();
 }
 
 init();
