@@ -73,8 +73,8 @@ function loadCoords(){
 }
 
 function init(){
-    let timerId = setInterval(loadCoords,3600000)
-    timerId
+    let timerId = setInterval(loadCoords,3600000);
+    getWeather();
 };
 
 init();
