@@ -2,6 +2,8 @@ const weather = document.querySelector(".js-weather");
 const weather_image = document.querySelector(".js-weather-image");
 const API_KEY = "a0a2e526870999b20ed3f22164870054";
 const COORDS = "coords";
+var arr_1 = []
+
 
 function getWeather(lat, lon){
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`)
@@ -15,6 +17,14 @@ function getWeather(lat, lon){
     wt_id = parseInt(json.weather[0].id);
     console.log(wt_id);
     weather.innerText = `${temperature}c@${name}\n${wt}`;
+    var arr_2 = []
+    arr[0] = temperature
+    arr[1] = name
+    arr[3] = wt
+    arr[4] = wt_id
+    arr_1.push(arr_2);
+    console.log(arr_1);
+    
     if(wt_id>804)console.log("continue");
     else if(wt_id>800)weather_image.src='images/overcast.jpg';
     else if(wt_id==800)weather_image.src='images/clear.png';
@@ -63,7 +73,7 @@ function loadCoords(){
 }
 
 function init(){
-    loadCoords();
+    let timerId = setInterval(loadCoords,3600000)
 };
 
 init();
