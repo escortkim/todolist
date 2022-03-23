@@ -74,6 +74,7 @@ function loadCoords(){
 
 function init(){
     let timerId = setInterval(loadCoords,3600000)
+    timerId
 };
 
 init();
